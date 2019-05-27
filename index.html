@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vectra</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+        <!-- Bootstrap -->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css" />
+
+        <!-- Javascript -->
+        <script type="text/javascript" src="function.js"></script>
+
+    </head>
+    <body>
+
+        <!-- Cabeçalho -->
+        <div class="page-header">
+            <h1> Cadastro de Cliente </h1>
+        </div>
+
+        <!-- Entrada de dados -->
+        <div class="container">
+            <form id="frmPessoa" class="form-horizontal">
+
+			          <div class="form-group">
+                    <label for="txtNome" class="col-lg-2 control-label">Nome</label>
+                    <div class="col-sm-4">
+                        <input type="text" id="txtNome" class="form-control" placeholder="Nome">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="txtCpf" class="col-sm-2 control-label">Cpf</label>
+                    <div class="col-sm-4">
+                        <input type="text" id="txtCpf" class="form-control" placeholder="Cpf">
+                    </div>
+                </div>
+
+               <div class="form-group">
+                    <label for="txtIdade" class="col-lg-2 control-label">Idade</label>
+                    <div class="col-sm-4">
+                        <input type="text" id="txtIdade" class="form-control" placeholder="Idade">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="txtPeso" class="col-lg-2 control-label">Peso</label>
+                    <div class="col-sm-4">
+                        <input type="number" id="txtPeso" class="form-control" placeholder="Peso">
+                    </div>
+                </div>
+
+				        <div class="form-group">
+                    <label for="txtAltura" class="col-lg-2 control-label">Altura</label>
+                    <div class="col-sm-4">
+                        <input type="number" id="txtAltura" class="form-control" placeholder="Altura em cm">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-lg-offset-2 col-sm-4">
+                        <input type="submit" value="Cadastrar" id="btnSave" class="btn btn-success"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Tabela com a lista de dados -->
+        <div class="container">
+            <table id="tblList" class="table table-bordered"></table>
+        </div>
+    </body>
+</html>
